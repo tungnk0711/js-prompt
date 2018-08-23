@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function myFunction() {
+            var  a = prompt("Please enter a");
+            var  b = prompt("Please enter b");
+
+            if (eval(a)%eval(b)==0) {
+                document.getElementById("demo").innerHTML = "a chia het cho b";
+            }else{
+                document.getElementById("demo").innerHTML = "a khong chia het cho b";
+            }
+        }
+    </script>
+</head>
+<body>
+<p>Click the button to demonstrate the prompt box.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+</body>
+</html>
